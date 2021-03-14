@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>c-f-c-crew necklace</title>
+</head>
+<body>
+  <!--ヘッダー-->
+  <header>
+
+    <!--ヘッダーロゴ-->
+        <div class="logo">
+          <a href="index.html"><img src="images/C-F-C-Crew-logo.png" alt=""></a>
+        </div>
+    
+    <!--ハンバーガーメニュー-->
+        <div id="hamburger">
+          <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+    
+    <!--ハンバーガーメニューのリスト-->
+        <nav class="sm">
+          <ul>
+            <li><a href="#1">[1]</a></li>
+            <li><a href="#2">[2]</a></li>
+            <li><a href="#3">[3]</a></li>
+            
+          </ul>
+        </nav>
+    
+    <!--ヘッダーリスト-->
+        <nav class="pc">   <!--pcクラスを追記-->
+          <ul>
+            <li><a href="#1">[1]</a></li>
+            <li><a href="#2">[2]</a></li>
+            <li><a href="#3">[3]</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+      
+      <!--JQuery-->
+      <script src="jquery-3.6.0.min.js"></script>
+      <script>
+        $('#hamburger').on('click', function() {
+          $('.icon').toggleClass('close');
+          $('.sm').slideToggle();
+        });
+        </script>
+        
+  <!--メイン-->      
+  <main id="main" class="wrapper">
+    <div class="main-pic">
+      <img src="images/エゾシカネックレス(3).jpg" alt="">
+      <img class="item" src="images/エゾシカシンプルネックレス (2).jpg" alt="">
+      <img class="item" src="images/エゾシカ角アンティークビーズ付きブレスレットNo2.jpg" alt="">
+      <img class="item" src="images/エゾシカ角アンティークビーズ付きブレスレット（２）.jpg">
+      <img class="item" src="images/流木ボタン付きエゾシカブレスレット(3).jpg">
+    </div>
+
+  <!--ネックレス-->
+    <div id="necklace" class=" wrapper">
+      <div class="necklace-title">
+        <h1>Charm</h1>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="necklace-list wrapper">
+        <div id="1" class="necklace-item">
+          <img src="images/charm1.JPG">
+          <table class="item-list">
+            <tr>
+              <th>[1] エゾシカ角のチャーム</th>
+              <td>: ¥1500</td>
+            </tr>
+          </table>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div id="2" class="necklace-item">
+          <img src="images/charm2.jpg">
+          <table class="item-list">
+            <tr>
+              <th>[2] エゾシカ角のチャーム</th>
+              <td>: ¥1500</td>
+            </tr>
+          </table>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div id="3" class="necklace-item">
+          <img src="images/charm3.jpg">
+          <table class="item-list">
+            <tr>
+              <th>[3] エゾシカ角のチャーム</th>
+              <td>: ¥1500</td>
+            </tr>
+          </table>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>   
+    </div>
+  </main>
+        
+        
+
+    
+  
+
+  <!--フッター-->
+  <footer>
+    <div class="logo2">
+      <a href="index.html"><img src="images/C-F-C-Crew-logo.png" alt=""></a>
+    </div>
+    <div class="copy">
+      <p><small>©Bu-rock Designs</small></p>
+    </div>
+  </footer>  
+</body>
+</html>
